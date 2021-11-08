@@ -80,200 +80,203 @@ class _HesapMakinesiState extends State<HesapMakinesi> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.purple),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Hesap Makinesi",
+      home: Center(
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text(
+              "Hesap Makinesi",
+            ),
+            centerTitle: true,
           ),
-          centerTitle: true,
-        ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              margin: EdgeInsets.all(8.0),
-              child: Text(
-                islemGecmisi,
-                style: GoogleFonts.rubik(
-                  textStyle: TextStyle(
-                    fontSize: 30,
-                    color: Colors.black54,
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  margin: EdgeInsets.all(8.0),
+                  child: Text(
+                    islemGecmisi,
+                    style: GoogleFonts.rubik(
+                      textStyle: TextStyle(
+                        fontSize: 30,
+                        color: Colors.black54,
+                      ),
+                    ),
                   ),
                 ),
-              ),
-            ),
-            
-            Container(
-              child: Text(
-                gosterilecekSayi,
-                style: GoogleFonts.rubik(
-                    textStyle: TextStyle(
-                  fontSize: 40,
-                  color: Colors.black,
-                )),
-              ),
-            ),
-            Row(
-              children: [
-                HesapMakinesiButtonu(
-                  metin: "",
-                  dolguRengi: 0xFFF3E5F5,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
+                Container(
+                  child: Text(
+                    gosterilecekSayi,
+                    style: GoogleFonts.rubik(
+                        textStyle: TextStyle(
+                      fontSize: 40,
+                      color: Colors.black,
+                    )),
+                  ),
                 ),
-                HesapMakinesiButtonu(
-                  metin: "",
-                  dolguRengi: 0xFFF3E5F5,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
+                Row(
+                  children: [
+                    HesapMakinesiButtonu(
+                      metin: "",
+                      dolguRengi: 0xFFF3E5F5,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "",
+                      dolguRengi: 0xFFF3E5F5,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "AC",
+                      dolguRengi: 0xFFF3E5F5,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "/",
+                      dolguRengi: 0xFFF3E5F5,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                  ],
                 ),
-                HesapMakinesiButtonu(
-                  metin: "AC",
-                  dolguRengi: 0xFFF3E5F5,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
+                Row(
+                  children: [
+                    HesapMakinesiButtonu(
+                      metin: "7",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "8",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "9",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "+",
+                      dolguRengi: 0xFFF3E5F5,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                  ],
                 ),
-                HesapMakinesiButtonu(
-                  metin: "/",
-                  dolguRengi: 0xFFF3E5F5,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
+                Row(
+                  children: [
+                    HesapMakinesiButtonu(
+                      metin: "4",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "5",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "6",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "-",
+                      dolguRengi: 0xFFF3E5F5,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    HesapMakinesiButtonu(
+                      metin: "1",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "2",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "3",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "X",
+                      dolguRengi: 0xFFF3E5F5,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    HesapMakinesiButtonu(
+                      metin: "",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "0",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: ",",
+                      dolguRengi: 0xFFCE93D8,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                    HesapMakinesiButtonu(
+                      metin: "=",
+                      dolguRengi: 0xFFF3E5F5,
+                      metinRengi: 0xFF000000,
+                      metinBoyutu: 34.0,
+                      tiklama: btnTiklama,
+                    ),
+                  ],
                 ),
               ],
             ),
-            Row(
-              children: [
-                HesapMakinesiButtonu(
-                  metin: "7",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "8",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "9",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "+",
-                  dolguRengi: 0xFFF3E5F5,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                HesapMakinesiButtonu(
-                  metin: "4",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "5",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "6",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "-",
-                  dolguRengi: 0xFFF3E5F5,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                HesapMakinesiButtonu(
-                  metin: "1",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "2",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "3",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "X",
-                  dolguRengi: 0xFFF3E5F5,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                HesapMakinesiButtonu(
-                  metin: "",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "0",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: ",",
-                  dolguRengi: 0xFFCE93D8,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-                HesapMakinesiButtonu(
-                  metin: "=",
-                  dolguRengi: 0xFFF3E5F5,
-                  metinRengi: 0xFF000000,
-                  metinBoyutu: 34.0,
-                  tiklama: btnTiklama,
-                ),
-              ],
-            ),
-          ],
+          ),
         ),
       ),
     );

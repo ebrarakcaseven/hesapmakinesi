@@ -18,25 +18,27 @@ class HesapMakinesiButtonu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(4.0),
-      child: SizedBox(
-        width: 70,
-        height: 70,
-        child: FlatButton(
-          onPressed: () {
-            tiklama(metin);
-          },
-          color: Color(dolguRengi),
-          textColor: Color(metinRengi),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-          child: Text(
-            metin,
-            style: GoogleFonts.rubik(
-                textStyle: TextStyle(
-              fontSize: metinBoyutu,
-            )),
+    return Center(
+      child: Container(
+        margin: EdgeInsets.all(4.0),
+        child: SizedBox(
+          width: 70,
+          height: 70,
+          child: FlatButton(
+            onPressed: () {
+              tiklama(metin);
+            },
+            color: Color(dolguRengi),
+            textColor: Color(metinRengi),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+            child: Text(
+              metin,
+              style: GoogleFonts.rubik(
+                  textStyle: TextStyle(
+                fontSize: metinBoyutu,
+              )),
+            ),
           ),
         ),
       ),
