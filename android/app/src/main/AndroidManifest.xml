@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hesap_makinasi">
    <application
-        android:label="hesap_makinasi"
+        android:label="EST hesap makinesi"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

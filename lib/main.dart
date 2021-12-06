@@ -79,16 +79,17 @@ class _HesapMakinesiState extends State<HesapMakinesi> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.purple),
+      theme: ThemeData(primarySwatch: Colors.blueGrey),
       home: Center(
         child: Scaffold(
           appBar: AppBar(
             title: Text(
-              "Hesap Makinesi",
+              "Emre Salih Türközü 12/A 8161",
             ),
             centerTitle: true,
           ),
-          body: Center(
+          body: Padding(
+            padding: const EdgeInsets.all(47.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -118,28 +119,28 @@ class _HesapMakinesiState extends State<HesapMakinesi> {
                   children: [
                     HesapMakinesiButtonu(
                       metin: "",
-                      dolguRengi: 0xFFF3E5F5,
+                      dolguRengi: 0xFFe0e0e0,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "",
-                      dolguRengi: 0xFFF3E5F5,
+                      dolguRengi: 0xFFe0e0e0,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "AC",
-                      dolguRengi: 0xFFF3E5F5,
+                      dolguRengi: 0xFFe0e0e0,
                       metinRengi: 0xFF000000,
-                      metinBoyutu: 34.0,
+                      metinBoyutu: 28.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "/",
-                      dolguRengi: 0xFFF3E5F5,
+                      dolguRengi: 0xFFe0e0e0,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
@@ -150,28 +151,28 @@ class _HesapMakinesiState extends State<HesapMakinesi> {
                   children: [
                     HesapMakinesiButtonu(
                       metin: "7",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "8",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "9",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "+",
-                      dolguRengi: 0xFFF3E5F5,
+                      dolguRengi: 0xFFe0e0e0,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
@@ -182,28 +183,28 @@ class _HesapMakinesiState extends State<HesapMakinesi> {
                   children: [
                     HesapMakinesiButtonu(
                       metin: "4",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "5",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "6",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "-",
-                      dolguRengi: 0xFFF3E5F5,
+                      dolguRengi: 0xFFe0e0e0,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
@@ -214,28 +215,28 @@ class _HesapMakinesiState extends State<HesapMakinesi> {
                   children: [
                     HesapMakinesiButtonu(
                       metin: "1",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "2",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "3",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "X",
-                      dolguRengi: 0xFFF3E5F5,
+                      dolguRengi: 0xFFe0e0e0,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
@@ -246,28 +247,28 @@ class _HesapMakinesiState extends State<HesapMakinesi> {
                   children: [
                     HesapMakinesiButtonu(
                       metin: "",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "0",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: ",",
-                      dolguRengi: 0xFFCE93D8,
+                      dolguRengi: 0xFFbdbdbd,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
                     ),
                     HesapMakinesiButtonu(
                       metin: "=",
-                      dolguRengi: 0xFFF3E5F5,
+                      dolguRengi: 0xFFe0e0e0,
                       metinRengi: 0xFF000000,
                       metinBoyutu: 34.0,
                       tiklama: btnTiklama,
